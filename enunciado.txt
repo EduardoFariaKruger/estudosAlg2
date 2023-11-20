@@ -1,0 +1,62 @@
+Trabalho prático de Algoritmos 2 
+Comparação prática de algoritmos de ordenação
+
+Preâmbulo
+
+Em sala de aula analisamos teoricamente a complexidade
+de alguns algoritmos de ordenação, em particular até
+o momento, os algoritmos selection sort e insertion 
+sort, ambos nas versões iterativas e recursivas.
+
+Neste trabalho poderemos ver na prática a diferença
+entre eles medindo o tempo de execução para entradas
+de diferentes tamanhos.
+
+Medir o tempo efetivo é interessante pois permite
+verificar na prática o sentimento de lentidão ou
+eficiência dos algoritmos com entradas reais.
+
+O trabalho
+
+Neste trabalho você receberá um arquivo no formato
+tgz que contém:
+
+- este enunciado;
+- um arquivo main.c que explica como medir tempo em C;
+- um arquivo de protótipos ordenacao.h;
+- uma sugestao de arquivo makefile;
+- um arquivo de entrada com 100 mil elementos não ordenados;
+- um arquivo de entrada com 1 milhão de elementos não ordenados.
+
+Você deve criar um arquivo ordenacao.c que implemente as funcoes
+cujos prototipos estao no arquivo ordenacao.h. Em seguida deve
+criar um arquivo main.c que gere dados que podem ser colocados 
+em uma tabela de tempos de execução comparativos entre eles.
+
+Um exemplo de tabela é (tempos em segundos):
+
+algoritmo - 100mil - 1 milhao
+selection iterativo - x - y
+selection recursivo - x - y
+insertion iterativo - x - y
+insertion recursivo - x - y
+
+Estas tabelas podem ser lidas por programas que geram
+gráficos, faremos isso em outra aula prática.
+
+Para ler os vetores de teste, use os recursos de
+redirecionamento de entrada e saída da shell, assim:
+
+Para testar seus algoritmos (ative a impressao de entrada
+e saída dos vetores):
+
+./main < entrada_teste.txt
+
+Depois comente as linhas que imprime os vetores e rode:
+
+./main < entrada_100_mil.txt
+
+e em seguida:
+
+./main < entrada_1_milhao.txt
+
